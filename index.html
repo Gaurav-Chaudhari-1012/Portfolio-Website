@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(27, 27, 103);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(136, 136, 225);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(136, 136, 225);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 80px 0; */
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 70px 0;
+        }
+
+        .leftsection .button{
+            padding: 50px 0;
+        }
+
+        .leftsection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-grey {
+            color: rgb(119, 115, 115);
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            /* right: 104px; */
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer{
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 233px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px;
+
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Gaurav's Portfolio</div>
+            <div class="rigth">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Gaurav</span>
+
+                <div>and i am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            
+            </div>
+            <div class="rightsection">
+                <img src="../Images/PngItem_1127587.png" alt="" />
+            </div>
+        </section>
+        <hr />
+        <section class="secondSection">
+            <span class="text-grey">What i have done so far</span>
+            <h1>My Skills</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="../Images/5072860.png" alt="" />
+                    <div class="vertical-title">
+                        HTML Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                        reiciendis possimus illo vitae, quam amet. Officiis dolor esse
+                        repudiandae veritatis quibusdam omnis soluta?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="../Images/html_png.png" alt="" />
+                    <div class="vertical-title">
+                        HTML Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                        reiciendis possimus illo vitae, quam amet. Officiis dolor esse
+                        repudiandae veritatis quibusdam omnis soluta?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="../Images/CSS_png.png" alt="" />
+                    <div class="vertical-title">
+                        HTML Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                        reiciendis possimus illo vitae, quam amet. Officiis dolor esse
+                        repudiandae veritatis quibusdam omnis soluta?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="../Images/javascript_png.png" alt="" />
+                    <div class="vertical-title">
+                        HTML Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                        reiciendis possimus illo vitae, quam amet. Officiis dolor esse
+                        repudiandae veritatis quibusdam omnis soluta?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="../Images/5072860.png" alt="" />
+                    <div class="vertical-title">
+                        HTML Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                        reiciendis possimus illo vitae, quam amet. Officiis dolor esse
+                        repudiandae veritatis quibusdam omnis soluta?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="../Images/5072860.png" alt="" />
+                    <div class="vertical-title">
+                        HTML Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                        reiciendis possimus illo vitae, quam amet. Officiis dolor esse
+                        repudiandae veritatis quibusdam omnis soluta?
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+
+        <div class="footer-first">
+            <h3>Gaurav's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/gaurav-chaudhari-233a2216b/" target="_blank">Linkedin</a></li>
+                <li><a href="https://twitter.com/LevelupGaurav" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/gauravchaudhari.eth/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100041745144339" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer-forth">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </div>
+
+    </div>
+        <div class="footer-rights">
+            Copyright &#169; gauravsportfolio.com | All rights reserverd
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: ["Digital Marketer", "Web Developer"],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
